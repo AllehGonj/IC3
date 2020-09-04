@@ -18,11 +18,8 @@ def restartGame():
 def press_space(): 
     pyautogui.keyUp('down')  
     pyautogui.keyDown('space')
-    # Press the key for a time so the dino jump for a while longer
-    time.sleep(0.05)  
-    print("jump")
-    # Dinosaur time in the air
-    time.sleep(0.1) 
+    # Press the key for a time so the dino jump for a while longer 
+    time.sleep(0.15) 
     pyautogui.keyUp('space') 
     pyautogui.keyDown('down') 
   
