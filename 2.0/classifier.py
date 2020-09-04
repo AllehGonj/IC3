@@ -1,3 +1,4 @@
+import os
 import random 
 import imageio
 import numpy as np
@@ -54,7 +55,8 @@ def calculate_score(classifier, data, target):
 def predict(classifier, data):
     return classifier.predict(data)
 
-digits_path = 'digits/'
+dirname = os.path.dirname(__file__)
+digits_path = os.path.join(dirname, 'digits/')
 digits_dataset = datasets.load_digits()
 
 # Saving Sklearn hand-written digits, if already stored comment the line below
